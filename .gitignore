@@ -66,6 +66,7 @@ docs/_build/
 
 # PyBuilder
 target/
+samples/
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -111,3 +112,4 @@ results*
 *.mat
 *.tar
 *.bin
+*.pth

@@ -310,7 +310,7 @@ def pidinet_small_converted(args):
     dil = 12 if args.dil else None
     return PiDiNet(30, pdcs, dil=dil, sa=args.sa, convert=True)
 
-def pidinet_converted(args):
-    pdcs = config_model_converted(args.config)
-    dil = 24 if args.dil else None
-    return PiDiNet(60, pdcs, dil=dil, sa=args.sa, convert=True)
+def pidinet_converted(config, sa, dil):
+    pdcs = config_model_converted(config)
+    dil = 24 if dil else None
+    return PiDiNet(60, pdcs, dil=dil, sa=sa, convert=True)
